@@ -1,0 +1,20 @@
+a,button{
+        cursor: pointer;
+      }
+      @media (max-width:1024px) and (min-width:1024px){
+        #categories article{
+          display:grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+        #categories article div{
+            width: 100%;
+        }
+
+        #produits article{
+          display:grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+        #produits article .card{
+            width: 100%;
+        }
+      }

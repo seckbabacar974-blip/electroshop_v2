@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr" class="m-0 p-0 box-border scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MB_Shoes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-gray-200">
+    <!-- header -->
+    <header class="px-8 py-2 flex justify-between items-center fixed top-0 left-0 right-0  backdrop-blur-sm shadow-md z-20">
+      <!-- logo -->
+      <div class="flex gap-2">
+        <div class="bg-black w-[50px] h-[50px] rounded-lg p-4 flex justify-center items-center text-white font-semibold text-xl cursor-pointer">
+          MBS
+        </div>
+        <h2 class="font-bold">
+          MB Shoes <br />
+          <span class="font-normal text-gray-400">chaussures de qualité</span>
+        </h2>
+      </div>
+
+      
+      <!-- hamburger -->
+      <input type="checkbox" id="hamburger_menu" class="hidden peer">
+      <!-- navbar -->
+      <nav class="lg:flex lg:gap-10 lg:justify-center lg:items-center hidden md:flex md:gap-4 md:justify-center md:items-center peer-checked:absolute peer-checked:top-16 peer-checked:left-0 peer-checked:justify-center peer-checked:items-center peer-checked:gap-12 peer-checked:bg-gray-100 peer-checked:flex peer-checked:flex-col peer-checked:rounded-2xl transition-all duration-500 ease-linear peer-checked:w-[100%] peer-checked:h-fit peer-checked:p-5">
+        <a
+          href="#Accueil" class="text-gray-700 font-arial font-medium capitalize text-md transition-all duration-300 hover:text-white"
+          >Accueil</a>
+        <a href="#categories"class="text-gray-700 font-arial font-medium capitalize text-md transition-all duration-300 hover:text-white">Catégories</a>
+        <a href="#produits" class="text-gray-700 font-arial font-medium capitalize text-md transition-all duration-300 hover:text-white">Produits</a>
+        <a href="#contact" class="text-gray-700 font-arial font-medium capitalize text-md transition-all duration-300 hover:text-white">Contact</a>
+        <a href="#" class="bg-black text-white p-2 rounded-lg font-arial font-medium capitalize w-fit text-md transition-all duration-300 hover:translate-y-1">Voir les offres</a>
+      </nav>
+      <!-- navbar -->
+
+      <label for="hamburger_menu" class="block md:hidden cursor-pointer">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </label>
+      <!-- hamburger -->
+    </header>
+    <!-- header -->
+
+    <main class="lg:mx-15 flex flex-col gap-20 mx-8 mt-23">
+    <!-- hero -->
+    <section id="accueil" class="w-full flex flex-col gap-5 md:flex-col md:gap-4 lg:flex lg:flex-row">
+      <!-- left -->
+      <div class="w-full flex flex-col gap-3 justify-center items-start md:w-full">
+        <h1 class="text-5xl font-bold lg:max-w-[24ch]">
+          Trouve la paire parfaite pour affirmer ton style
+        </h1>
+        <p class="text-gray-600 lg:max-w-[80ch]">
+          Découvrez une sélection unique de chaussures indispensables : sneakers
+          tendances, paires de ville élégantes, modèles de sport performants et
+          claquettes légères — le meilleur du style et du confort au meilleur
+          rapport qualité/prix.
+        </p>
+        <div class="flex gap-4">
+          <button class="bg-black rounded-lg p-2 text-white w-fit border transition-all duration-500 ease-linear hover:bg-transparent hover:text-black ">
+            Acheter maintenant
+          </button>
+          <button class="bg-transparent border rounded-lg p-2 text-black w-fit transition-all duration-500 ease-linear hover:bg-black hover:text-white">
+            Explorer les catégories
+          </button>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="w-full shadow-2xl rounded-2xl flex  flex-col gap-2 px-4 pb-10 pt-4 bg-white md:w-full">
+        <div class="bg-black text-white w-fit py-1 px-3 rounded-full flex justify-center items-center shadow-2xl transition-all duration-500 hover:scale-[1.02]">Promo de la semaine</div>
+        <img src="images/adidas-samba.jpg" alt="" class="h-[250px] rounded-2xl w-full object-cover"/>
+        <h2 class="font-semibold text-xl">Pack Streetwear Essentie</h2>
+        <p class="text-gray-600 max-w-[80ch]">
+          Sneakers tendance + 2 paires de chaussettes assorties — le combo
+          parfait pour rafraîchir ton style ou offrir en cadeau.
+        </p>
+        <article class="grid grid-cols-2 gap-3">
+          <div class="bg-gray-100 rounded-lg p-2 shadow-sm">
+            <h2 class="font-semibold text-xl">
+              -20% <br />
+              <span class="font-normal text-gray-600 text-sm">sur le pack</span>
+            </h2 class="font-semibold text-xl">
+          </div>
+          <div class="bg-gray-100 rounded-lg p-2 shadow-sm">
+            <h2 class="font-semibold text-xl">
+              48h% <br />
+              <span class="font-normal text-gray-600 text-sm">livraison rapide</span>
+            </h2 class="font-semibold text-xl">
+          </div>
+          <div class="bg-gray-100 rounded-lg p-2 shadow-sm">
+            <h2 class="font-semibold text-xl">
+              1 an <br />
+              <span class="font-normal text-gray-600 text-sm">garantie</span>
+            </h2>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-2 shadow-sm">
+            <h2 class="font-semibold text-xl">
+              Support <br />
+              <span class="font-normal text-gray-600 text-sm">7j/7</span>
+            </h2>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <!-- Categories -->
+     <section id="categories">
+        <h1 class="font-bold text-3xl">Catégories</h1>
+        <p class="text-gray-600 max-w-[80ch]">Choisissez rapidement ce dont vous avez besoin. Des modèles pensés pour votre style, votre confort et votre quotidien.</p>
+        <article class="flex flex-col gap-4 mt-10 md:grid md:grid-cols-2 md:gap-5 lg:flex lg:flex-row">
+          <div class="lg:w-1/4 bg-white rounded-lg p-2 lg:hover:shadow-2xl lg:hover:ease-linear transition-all duration-300 hover:scale-[1.02] md:w-full">
+            <img src="images/jo37.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-full w-fit px-3 py-1 font-medium shadow-xl">Baskets</div>
+            <h1 class="font-bold text-xl">Sneakers & Baskets</h1>
+            <p class="text-gray-600 max-w-[26ch]">Pour un look urbain et branché au quotidien.</p>
+          </div>
+
+          <div class="lg:w-1/4 bg-white rounded-lg p-2 lg:hover:shadow-2xl lg:hover:ease-linear transition-all duration-300 hover:scale-[1.02] md:w-full">
+            <img src="images/mokassin.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2">
+            <div class="bg-gray-100 rounded-full w-fit px-3 py-1 font-medium shadow-xl">Élégance</div>
+            <h1 class="font-bold text-xl">Chaussures de Ville</h1>
+            <p class="text-gray-600 max-w-[26ch]">Mocassins et derbies pour vos grands rendez-vous.</p>
+          </div>
+
+          <div class="lg:w-1/4 bg-white rounded-lg p-2 lg:hover:shadow-2xl lg:hover:ease-linear transition-all duration-300 hover:scale-[1.02] md:w-full">
+            <img src="images/ja3.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2">
+            <div class="bg-gray-100 rounded-full w-fit px-3 py-1 font-medium shadow-xl">Performance</div>
+            <h1 class="font-bold text-xl">Sport & Running</h1>
+            <p class="text-gray-600 max-w-[26ch]">Confort et amorti pour dépasser vos limites.</p>
+          </div>
+          
+          <div class="lg:w-1/4 bg-white rounded-lg p-2 lg:hover:shadow-2xl lg:hover:ease-linear transition-all duration-300 hover:scale-[1.02] md:w-full">
+            <img src="images/sandalev2.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2">
+            <div class="bg-gray-100 rounded-full w-fit px-3 py-1 font-medium shadow-xl">Détente</div>
+            <h1 class="font-bold text-xl">Sandales & Claquettes</h1>
+            <p class="text-gray-600 max-w-[26ch]">Légèreté et fraîcheur pour les jours décontractés.</p>
+          </div>
+        </article>
+      </section>
+      <!-- Categories -->
+      
+      <!-- Produits -->
+      <section id="produits" >
+        <h1 class="font-bold text-3xl">Produits populaires</h1>
+        <p class="text-gray-600 max-w-[80ch]">Une sélection "best-sellers" avec images. Tu peux modifier les prix et titres comme tu veux.</p>
+        <article class="grid grid-cols-1 gap-5 mt-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class=" bg-white rounded-lg p-3 hover:shadow-2xl relative card">
+            <img src="images/White Air Force 1.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-lg w-fit px-3 py-1 font-normal shadow-xl absolute top-3 left-3">Best seller</div>
+            <h1 class="font-bold text-xl">Air Force 1 Classic - Blanche</h1>
+            <p class="text-gray-600 ">L'indémodable cuir blanc, confort optimal et style épuré pour toutes vos tenues.</p>
+            <div class="mt-2 flex items-center justify-between">
+              <h1>
+                <strong>45 000 FCFA</strong>
+              </h1>
+              <a
+                  href="#"
+                  class="bg-black text-white p-2 rounded-xl font-arial font-medium capitalize text-md transition-all duration-300 hover:translate-y-1"
+                >Ajouter
+              </a>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-lg p-3 hover:shadow-2xl relative card">
+            <img src="images/adidas-samba.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-lg w-fit px-3 py-1 font-normal shadow-xl absolute top-3 left-3">Promo</div>
+            <h1 class="font-bold text-xl">Adidas Campus 00s</h1>
+            <p class="text-gray-600 ">Look rétro des années 2000, lacets larges et daim premium ultra confortable.</p>
+            <div class="mt-2 flex items-center justify-between">
+              <h1>
+                <strong>49 000 FCFA</strong>
+              </h1>
+              <a
+                  href="#"
+                  class="bg-black text-white p-2 rounded-xl font-arial font-medium capitalize text-md transition-all duration-300 hover:translate-y-1"
+                >Ajouter
+              </a>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-lg p-3 hover:shadow-2xl relative card">
+            <img src="images/mokassin.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-lg w-fit px-3 py-1 font-normal shadow-xl absolute top-3 left-3">Promo</div>
+            <h1 class="font-bold text-xl">Mocassins en Cuir Noir</h1>
+            <p class="text-gray-600 ">Élégance italienne, cuir véritable souple, parfaits pour le bureau ou les cérémonies.</p>
+            <div class="mt-2 flex items-center justify-between">
+              <h1>
+                <strong>39 000 FCFA</strong>
+              </h1>
+              <a
+                  href="#"
+                  class="bg-black text-white p-2 rounded-xl font-arial font-medium capitalize text-md transition-all duration-300 hover:translate-y-1"
+                >Ajouter
+              </a>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-lg p-3 hover:shadow-2xl relative card">
+            <img src="images/TN.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-lg w-fit px-3 py-1 font-normal shadow-xl absolute top-3 left-3">Nouveau</div>
+            <h1 class="font-bold text-xl">Nike TN Plus - Black & Volt</h1>
+            <p class="text-gray-600 ">Amorti Tuned Air légendaire, design agressif et mesh respirant haute performance. L'élégance est belle et bien au rendez-vous !</p>
+            <div class="mt-2 flex items-center justify-between">
+              <h1>
+                <strong>65 000 FCFA</strong>
+              </h1>
+              <a
+                  href="#"
+                  class="bg-black text-white p-2 rounded-xl font-arial font-medium capitalize text-md transition-all duration-300 hover:translate-y-1"
+                >Ajouter
+              </a>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-lg p-3 hover:shadow-2xl relative card">
+            <img src="images/running.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-lg w-fit px-3 py-1 font-normal shadow-xl absolute top-3 left-3">Top note</div>
+            <h1 class="font-bold text-xl">Running Pro Flyknit</h1>
+            <p class="text-gray-600 ">Idéale pour le sport, foulée légère, s'adapte à la forme du pied comme une chaussette. Confortable pour tout type d'activité.</p>
+            <div class="mt-2 flex items-center justify-between">
+              <h1>
+                <strong>35 000 FCFA</strong>
+              </h1>
+              <a
+                  href="#"
+                  class="bg-black text-white p-2 rounded-xl font-arial font-medium capitalize text-md transition-all duration-300 hover:translate-y-1"
+                >Ajouter
+              </a>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-lg p-3 hover:shadow-2xl relative card">
+            <img src="images/sandalev1.jpg" alt="" class="h-[30vh] object-cover w-full rounded-lg shadow-sm mb-2 transition-all duration-300 hover:scale-[1.02]">
+            <div class="bg-gray-100 rounded-lg w-fit px-3 py-1 font-normal shadow-xl absolute top-3 left-3">Offre</div>
+            <h1 class="font-bold text-xl">Claquettes Yeezy Slide - Bone</h1>
+            <p class="text-gray-600 ">Mousse EVA ultra légère pour un confort maximal à la maison ou lors de vos sorties décontractées. Parfait pour aller se balader</p>
+            <div class="mt-2 flex items-center justify-between">
+              <h1>
+                <strong>18 500 FCFA</strong>
+              </h1>
+              <a
+                  href="#"
+                  class="bg-black text-white p-2 rounded-xl font-arial font-medium capitalize text-md transition-all duration-300 hover:translate-y-1"
+                >Ajouter
+              </a>
+            </div>
+          </div>
+
+        </article>
+     </section>
+    <!-- Produits -->
+
+    <!-- Pourquoi -->
+     <section >
+      <h1 class="font-bold text-3xl">Pourquoi acheter chez nous ?</h1>
+        <p class="text-gray-600 ">Des avantages simples : qualité certifiée, service rapide et paiement sans stress.</p>
+        <article class="flex flex-col lg:justify-between gap-5 mt-4 md:flex-col lg:flex-row">
+          <div class="lg:w-1/3 bg-white rounded-lg p-4 shadow-xl md:w-full">
+          hover:  <div class="w-[50px] h-[50px] rounded-2xl bg-gray-200 flex justify-center items-center">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h1 class="font-bold text-xl">Livraison rapide</h1>
+            <p class="text-gray-600 ">
+              Réception sous 24h/48h partout à Dakar et dans les régions, avec suivi et confirmation avant passage.
+            </p>
+          </div>
+
+          <div class="lg:w-1/3 bg-white rounded-lg p-4 shadow-xl md:w-full">
+            <div class="w-[50px] h-[50px] rounded-2xl bg-gray-200 flex justify-center items-center">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <h1 class="font-bold text-xl">Qualité & Échanges</h1>
+            <p class="text-gray-600 max-w-[80ch]">
+              Toutes nos paires sont vérifiées. Erreur de pointure ? Pas de panique, nous échangeons votre paire sous 48h.
+            </p>
+          </div>
+
+          <div class="lg:w-1/3 bg-white rounded-lg p-4 shadow-xl md:w-full">
+            <div class="w-[50px] h-[50px] rounded-2xl bg-gray-200 flex justify-center items-center">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h1 class="font-bold text-xl">Paiement à la livraison</h1>
+            <p class="text-gray-600 max-w-[80ch]">
+              Commandez en toute sécurité et ne payez qu'une fois la chaussure reçue, essayée et validée.
+            </p>
+          </div>
+        </article>
+     </section>
+    <!-- Pourquoi -->
+
+    <!-- Contact -->
+     <section id="contact">
+      <h1 class="font-bold text-3xl">Contact</h1>
+      <p class="text-gray-600 max-w-[80ch]">Demandez une pointure, une disponibilité ou des infos sur la livraison.</p>
+      <article class="mt-4 flex flex-col lg:justify-between gap-5 md:flex-col lg:flex-row">
+        <!-- left -->
+         <div class="bg-white rounded-lg shadow-2xl flex flex-col gap-3 lg:w-1/2 p-4 md:w-full">
+          <h1 class="font-bold text-2xl">Nos Informations</h1>
+          <p class="text-gray-600">📍 Dakar, Sénégal</p>
+          <p class="text-gray-600">📞 +221 77 000 00 00</p>
+          <p class="text-gray-600">✉️ contact@your-shoeshop.sn</p>
+          <p class="text-gray-600 mt-4">Horaires : Lun - Sam, 9h - 20h. Réponse rapide via WhatsApp.</p>
+          <a
+          href="#produits"
+          class="bg-black text-white px-3 py-1 rounded-lg font-arial font-medium capitalize text-md w-fit transition-all duration-300 hover:translate-y-1"
+          >Voir les produits</a
+        >
+         </div>
+
+         <!-- right -->
+          <div class="bg-white rounded-lg shadow-2xl flex flex-col gap-3 lg:w-1/2 p-4 md:w-full">
+            <h1 class="font-bold text-3xl">Envoyer un message</h1>
+            <form action="" class="flex flex-col gap-3">
+              <input type="text" placeholder="Votre nom" class="outline-none p-2 w-full rounded-full border border-gray-200">
+              <input type="tel" placeholder="Téléphone" class="outline-none p-2 w-full rounded-full border border-gray-200">
+              <input type="email" placeholder="Email" class="outline-none p-2 w-full rounded-full border border-gray-200">
+              <textarea name="message" placeholder="Votre message ..." class="outline-none p-4 w-full rounded-xl border border-gray-200 h-[100px]"></textarea>
+            </form>
+            <button type="submit" class="w-full py-2 bg-black text-white rounded-lg hover:shadow-2xl">Envoyer</button>
+          </div>
+      </article>
+     </section>
+    <!-- Contact -->
+     </main>
+     <!-- footer -->
+     <footer class="bg-white rounded-lg shadow-sm p-4 flex flex-col gap-4 md:justify-between md:flex-row lg:justify-between lg:flex-row mt-20">
+      <p class="text-gray-600 text-center md:text-start">&copy;copyright MB Shoes &mdash; Tout droit reservé.</p>
+      <div class="flex gap-4 items-center md:block justify-between">
+        <a href="#" class="text-gray-600">Mention légale</a>
+        <a href="#" class="text-gray-600">Politique de confidentialité</a>
+      </div>
+     </footer>
+    <!-- footer -->
+  </body>
+</html>
